@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Cars</title>
 </head>
 <body>
-$END$
+<th:block th:each="msg : ${messages}">
+    <h1 th:text="${msg}"></h1>
+</th:block>
 </body>
 </html>
